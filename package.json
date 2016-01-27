@@ -1,7 +1,47 @@
 {
+  "name": "frp-todomvc-app",
   "private": true,
+  "description": "> Template used for creating [TodoMVC](http://todomvc.com) apps",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --config webpack.config.dev.js --inline --content-base build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serahhh/frp-todomvc-app.git"
+  },
+  "keywords": [
+    "todoapp",
+    "mvc",
+    "todo",
+    "cyclejs",
+    "frp",
+    "rxjs"
+  ],
+  "author": "Sarah Hayman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serahhh/frp-todomvc-app/issues"
+  },
+  "homepage": "https://github.com/serahhh/frp-todomvc-app#readme",
   "dependencies": {
+    "@cycle/core": "^6.0.0",
+    "@cycle/dom": "^9.0.2",
+    "rx": "^4.0.7",
     "todomvc-app-css": "^2.0.0",
     "todomvc-common": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
   }
 }
